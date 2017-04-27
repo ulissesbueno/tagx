@@ -361,9 +361,10 @@ class tagx{
 			foreach( $matches[1] as $needle ){
 				
 				//echo $needle."<BR>";
-				$this->SeachArray( trim($needle), $this->last_cel );
+				$this->SeachArray( trim($needle), $ar );
+				$ar = $this->last_cel;
 				//echo "<pre>". htmlentities( print_r( $this->last_cel , 1 ) )."</pre>";
-				//$this->last_cel = NULL;
+				$this->last_cel = NULL;
 
 			}
 
